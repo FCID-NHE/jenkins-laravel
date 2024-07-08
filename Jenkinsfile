@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'ssh yoda@10.10.10.10 "docker-compose up -d"'  \\# Remplacez user et docker1 par vos informations
+                sh 'ssh yoda@10.10.10.10 "docker-compose up -d"' 
                 # sh './vendor/bin/phpunit'
             }
         }
